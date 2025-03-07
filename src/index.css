@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+  padding:0px;
+  margin:0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  color:black;
+  font-family:'Roboto' , sans-serif;
+  
+}
+
+body {
+  margin: 0; /* Remove margins to prevent horizontal overflow */
+  padding: 0;
+  background-color: rgb(62, 61, 61);
+  overflow-x: hidden;
+}
+
+@keyframes fadeIn{
+  0%{
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  50%{
+    transform: translateY(25px);
+    opacity: 0.5;
+  }
+
+  100%{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  body{
+    margin:0px;
+  }
+}
