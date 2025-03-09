@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
 import { assets } from "../../assets/assets.js";
 import "./About.css";
 const About = () => {

@@ -7,7 +7,6 @@ import Resume from "../../components/Resume/Resume";
 import Projects from "../../components/Projects/Projects";
 import Services from "../../components/services/Services";
 import { assets } from "../../assets/assets";
-import { linearGradient } from "motion/react-client";
 const Home = () => {
   const sections = useRef([]);
 
@@ -40,7 +39,7 @@ const Home = () => {
         id="section1"
         style={{
           height: "100vh",
-          width:'100%',
+          width: "100%",
           background: `linear-gradient(rgba(0,0,0,0.05),rgba(0,0,0,0.3),rgba(0,0,0,0.04)),url(${assets.bg})`,
         }}
       >
