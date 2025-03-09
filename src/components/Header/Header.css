@@ -5,7 +5,8 @@
   justify-content: center;
   height: 100%;
   width:100%;
-  margin-top:50px;
+  margin-top:0px;
+  margin-bottom:70px;
   padding: 0 40px;
 }
 .grid{
@@ -22,12 +23,11 @@
   flex-direction: column;
   gap: 10px;
   padding: 0 30px;
-  animation: fadeIn 1s linear 0.3s; 
-  animation-fill-mode: both;
+  
 }
 
 .intro h4, 
-.intro p, 
+
 .intro h1 {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
@@ -36,23 +36,14 @@
 
 .intro h4 {
   font-size: 30px;
-  animation: fadeIn 1s linear 0.5s;
-  animation-fill-mode: both;
+  
 }
 
 .intro h1 {
   font-size: 50px;
-  animation: fadeIn 1s linear 0.7s;
-  animation-fill-mode: both;
+  
 }
 
-.intro p {
-  line-height: 1.5;
-  font-size: 20px;
-  font-weight: 300;
-  animation: fadeIn 1s linear 0.9s;
-  animation-fill-mode: both;
-}
 
 h4 span {
   color: blueviolet;
@@ -60,12 +51,10 @@ h4 span {
 
 .hero-div {
   position: relative;
-  left: 100px;
-  top: -30px;
+  left: 50px;
+  top: -50px;
   width:100%;
   height:100%;
-  animation: fadeIn 1s linear 1s;
-  animation-fill-mode: both;
 }
 
 .hero-img {
@@ -74,8 +63,7 @@ h4 span {
   border: 5px solid red;
   width:450px;
   height:450px;
-  animation: fadeIn 1s linear 1.2s; 
-  animation-fill-mode: both;
+  
 }
 
 .links{
@@ -88,11 +76,64 @@ h4 span {
 
 .icons{
    color:white;
-  animation: fadeIn 1s linear 1.5s; 
-  animation-fill-mode: both;
+  
 }
 
+.button-div {
+   display: flex;
+   width:50%;
+   margin-top:10px;
+   gap:25px;
+   align-items: center;
+   justify-content: center;
+}
+
+.button-div button{
+  font-size: 25px;
+  border-radius: 10px;
+  width:150px;
+  padding:10px;
+  border:none;
+  outline: none;
+}
+
+.button-div button:nth-child(1){
+  background:linear-gradient(to right , rgb(255, 225, 0) 50% , red 50%  );
+  background-size: 200% 100%;
+  background-position:bottom left ;
+  transition: all 0.5s;
+}
+.button-div button:nth-child(1):hover{
+  background-position:  bottom right ;
+}
+.button-div button:nth-child(2){
+  background:linear-gradient(to right , rgb(154, 154, 251) 50% , blue 50%  );
+  background-size: 200% 100%;
+  background-position:bottom right ;
+  transition: all 0.5s;
+}
+.button-div button:nth-child(2):hover{
+  background-position:  bottom left ;
+  
+}
+
+.button-div button:hover{
+  transform: translateY(-3px);
+}
+.button-div button:focus{
+  border:2px solid orange;
+}
+.button-div button .buttons{
+  color:white ;
+  width:100%;
+  text-decoration: none;
+}
+
+
 @media (max-width:1046px){
+  .hero{
+    margin-top: 150px;
+  }
   .grid{
     grid-template-columns: 1fr;
     gap:200px;
@@ -106,8 +147,15 @@ h4 span {
   .intro h4 , .intro h1{
     font-weight: 500;
   }
+  .button-div{
+    width:100%;
+  }
 }
 @media (max-width:768px){
+  .hero{
+    margin-bottom: 20px;
+    
+  }
   .intro{
     padding:0 0px;
 
@@ -118,9 +166,7 @@ h4 span {
   .intro h1{
     font-size: 25px;;
   }
-  .intro p{
-    font-size: 16px;
-  }
+ 
 
   .icons{
     font-size: 20px;

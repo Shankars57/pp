@@ -1,0 +1,109 @@
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about_image {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+.about_image img {
+  width: 500px;
+  height: 550px;
+  position: relative;
+  top: 70px;
+  left: 10px;
+}
+
+.about_me {
+  position: relative;
+  top: 80px;
+  left: 50px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  gap: 20px;
+  width: 700px;
+}
+
+.about_me h1 {
+  font-size: 50px;
+  position: relative;
+  top: -20px;
+}
+.about_me h1::before {
+  content: "About";
+  position: absolute;
+  font-size: 120px;
+  color: rgb(122, 120, 120);
+  letter-spacing: 2px;
+  width: 500px;
+  font-weight: 900;
+  z-index: -1;
+  bottom: -90px;
+  left: -10px;
+  opacity: 0.4;
+}
+
+.about_me .p1 {
+  font-size: 27px;
+}
+
+.about_me .p2 {
+  font-size: 20px;
+  color: white;
+  line-height: 2;
+}
+
+.about_me .p3 {
+  font-size: 20px;
+}
+.btn-div button {
+  width: 160px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: greenyellow;
+}
+.about-btn {
+  color: black;
+  text-decoration: none;
+  font-size:20px;
+}
+@media (max-width:1046px){
+  .about_me{
+    top:0px;
+  }
+  .about_me h1::before{
+    left:-60px;
+  }
+}
+@media (max-width: 768px) {
+  .about{
+    padding:20px;
+  }
+  .about_image{
+    display:none;
+  }
+  .about_me{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top:20px;
+    left:0px;
+  }
+  .about_me .p1 , .about_me .p2 {
+    width:70%;
+    text-align: center;
+  }
+
+}
+@media (max-width: 468px){
+   .about_me .p1 , .about_me .p2{
+    width:100%;
+    font-size: 15px;
+    text-align: center;
+   }
+}

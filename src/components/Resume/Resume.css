@@ -1,0 +1,94 @@
+.resumes {
+  width: 100%;
+  height: auto;
+  margin-top: 200px;
+}
+.resume_div {
+  text-align: center;
+}
+.resume_div h1 {
+  font-size: 50px;
+  letter-spacing: 2px;
+  position: relative;
+}
+.resume_div h1::before {
+  content: "RESUME";
+  position: absolute;
+  width:100%;
+  height:auto;
+  left:0px;
+  font-size:100px;
+  font-weight:700;
+  opacity: .2;
+  letter-spacing: 3px;
+}
+
+.details{
+  width: 100%;
+  height:auto;
+  margin-top:100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.details_divs{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap:50px;
+}
+.class10th{
+  background-color: rgba(50, 50, 50, 0.468);
+  font-family: 'Roboto',sans-serif;
+   width:450px;
+   height:180px;
+   display: flex;
+   align-items: start;
+   justify-content: center;
+   flex-direction: column;
+    padding-left:40px;
+   gap:10px;
+   box-shadow: 0 0 5px rgb(56, 56, 56);
+   border-radius: 3px;;
+}
+.class10th .Year{
+  font-size: 30px;;
+  font-weight: 800;
+  color:yellow;
+  
+}
+
+.class10th .Standard{
+  font-size: 30px;;
+  font-weight: 500;
+ 
+  color: aliceblue;
+}
+.class10th .sc_name{
+  font-size: 17px;;
+  font-weight: 500;
+  color: rgb(85, 174, 251);
+}
+
+@media (max-width:768px){
+  .resumes{
+    margin-top: 100px;
+  }
+  .details_divs{
+    grid-template-columns: 1fr;
+    gap:20px;
+    
+  }
+  .class10th{
+    width:100%;
+  }
+  .resume_div h1{
+     font-size: 50px;
+     position: relative;
+  }
+  .resume_div h1::before{
+      font-size:70px;
+      left:50px;
+    width:80%;
+      
+    }
+}

@@ -1,18 +1,17 @@
+.sections{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+  flex-direction: column;
+}
 section{
-  margin:10px 0;
+  margin-top:20px;
   opacity: 0;
   transform: translateY(100px);
   transition: all 1s ease;
-  overflow-x: hidden;
 }
-section .headings{
-  display: inline-block;
-  color:white;
-  position:relative;
-  left:70px;
-  font-size: 25px;
-  border-bottom:2px solid black;
-}
+
 section.visible {
   opacity: 1;
   transform: translateY(0);
@@ -23,7 +22,5 @@ section.visible {
     width:100%;
     margin:0px;
   }
-  section .headings{
-    left:40px;
-  }
+ 
 }
