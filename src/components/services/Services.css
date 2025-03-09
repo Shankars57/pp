@@ -95,8 +95,19 @@
 }
 
 @media (max-width:468px){
+  .service_header h1:before{
+    font-size: 60px;
+  }
+  .service_header p{
+    width:100%;
+    font-size: 15px;
+  }
+  .services_div{
+   padding:0 10px;
+  }
  .service_card {
-  width:200px;
+  width:180px;
   height:150px;
  }
+
 }

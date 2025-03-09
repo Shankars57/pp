@@ -37,10 +37,10 @@ const Home = () => {
         ref={(el) => (sections.current[0] = el)}
         className="home"
         id="section1"
-        style={{
+         style={{
           height: "100vh",
           width: "100%",
-          background: `linear-gradient(rgba(0,0,0,0.05),rgba(0,0,0,0.3),rgba(0,0,0,0.04)),url(${assets.bg})`,
+          //background: `linear-gradient(rgba(0,0,0,0.05),rgba(0,0,0,0.3),rgba(0,0,0,0.04)),url(${assets.bg})`,
         }}
       >
         <Header />

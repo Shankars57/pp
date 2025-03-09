@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 200px;
 }
 .about_image {
   width: 100%;
@@ -82,6 +83,7 @@
 @media (max-width: 768px) {
   .about{
     padding:20px;
+    margin-top: 50px;
   }
   .about_image{
     display:none;

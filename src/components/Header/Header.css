@@ -184,6 +184,9 @@ h4 span {
 }
 
 @media (max-width:480px){
+  .hero{
+    margin-top:50px;
+  }
   .links{
     gap:10px;
   }
