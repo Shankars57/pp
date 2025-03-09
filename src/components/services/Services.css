@@ -95,6 +95,9 @@
 }
 
 @media (max-width:468px){
+  .services_div{
+    margin-top: 100px;
+  }
   .service_header h1:before{
     font-size: 60px;
   }

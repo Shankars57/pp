@@ -90,6 +90,9 @@
   opacity: 1;
 }
 @media (max-width: 768px) {
+  .project_div{
+    margin-top: 100px;;
+  }
   .div_project {
     width: 100%;
     display: flex;
