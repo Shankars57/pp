@@ -38,7 +38,11 @@ const Home = () => {
         ref={(el) => (sections.current[0] = el)}
         className="home"
         id="section1"
-        style={{background:`linear-gradient(rgba(0,0,0,0.05),rgba(0,0,0,0.3),rgba(0,0,0,0.04)),url(${assets.bg})`}}
+        style={{
+          height: "100vh",
+          width:'100%',
+          background: `linear-gradient(rgba(0,0,0,0.05),rgba(0,0,0,0.3),rgba(0,0,0,0.04)),url(${assets.bg})`,
+        }}
       >
         <Header />
       </section>
@@ -61,23 +65,21 @@ const Home = () => {
         className="resume"
         id="resume"
       >
-      <Resume/>
-       
+        <Resume />
       </section>
       <section
         ref={(el) => (sections.current[4] = el)} // ✅ Unique index
         className="projects"
         id="projects"
       >
-      <Projects/>
+        <Projects />
       </section>
       <section
         ref={(el) => (sections.current[5] = el)} // ✅ Unique index
         className="services"
         id="services"
-       
       >
-        <Services/>
+        <Services />
       </section>
       <section
         ref={(el) => (sections.current[6] = el)} // ✅ Unique index
@@ -85,7 +87,6 @@ const Home = () => {
         id="contact"
         style={{ height: "100vh" }}
       ></section>
-      
     </div>
   );
 };
